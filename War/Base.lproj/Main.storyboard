@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="War" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Casino_War.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gmO-Dp-mH1" userLabel="backgroundimageview">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.92590302228927612" green="0.96462720632553101" blue="0.18556684255599976" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7T-Ex-F27" userLabel="CardViewContainer">
+                                <rect key="frame" x="160" y="215" width="280" height="170"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black_joker" translatesAutoresizingMaskIntoConstraints="NO" id="DBS-5V-oLY" userLabel="FirstCardImage">
+                                        <rect key="frame" x="160" y="0.0" width="120" height="170"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.016478285193443298" green="0.34569209814071655" blue="0.98469918966293335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="170" id="VQF-KB-fP0"/>
+                                            <constraint firstAttribute="width" constant="120" id="vfH-To-WrO"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red_joker" translatesAutoresizingMaskIntoConstraints="NO" id="p5b-uC-FqO" userLabel="SecondCardImage">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="170"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.93337893486022949" green="0.33025801181793213" blue="0.18632897734642029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstItem="p5b-uC-FqO" firstAttribute="leading" secondItem="y7T-Ex-F27" secondAttribute="leading" id="JYc-Hl-17b"/>
+                                    <constraint firstItem="DBS-5V-oLY" firstAttribute="height" secondItem="p5b-uC-FqO" secondAttribute="height" id="Jf3-dP-66i"/>
+                                    <constraint firstItem="DBS-5V-oLY" firstAttribute="width" secondItem="p5b-uC-FqO" secondAttribute="width" id="cBQ-oC-oWI"/>
+                                    <constraint firstItem="p5b-uC-FqO" firstAttribute="top" secondItem="y7T-Ex-F27" secondAttribute="top" id="g1h-M6-Wzv"/>
+                                    <constraint firstAttribute="height" constant="170" id="htf-Fo-vdU"/>
+                                    <constraint firstItem="DBS-5V-oLY" firstAttribute="top" secondItem="y7T-Ex-F27" secondAttribute="top" id="rl4-KU-Ilb"/>
+                                    <constraint firstAttribute="width" constant="280" id="vzt-uf-4ku"/>
+                                    <constraint firstAttribute="trailing" secondItem="DBS-5V-oLY" secondAttribute="trailing" id="xqR-OW-VXc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Glv-pm-yvO">
+                                <rect key="frame" x="20" y="385" width="560" height="215"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewl-7L-mSB" userLabel="PlayButton">
+                                        <rect key="frame" x="232" y="90" width="116" height="36"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                        <size key="titleShadowOffset" width="7" height="8"/>
+                                        <state key="normal" title="Play Round "/>
+                                        <connections>
+                                            <action selector="playroundtapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nSg-0j-pBj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstItem="ewl-7L-mSB" firstAttribute="centerX" secondItem="Glv-pm-yvO" secondAttribute="centerX" id="Qlv-av-Zca"/>
+                                    <constraint firstItem="ewl-7L-mSB" firstAttribute="centerY" secondItem="Glv-pm-yvO" secondAttribute="centerY" id="Tuj-aH-JiH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gmO-Dp-mH1" secondAttribute="bottom" id="0M5-cP-hcw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Glv-pm-yvO" secondAttribute="trailing" constant="-20" id="3iI-0b-1HR"/>
+                            <constraint firstItem="gmO-Dp-mH1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6Lt-Q9-Mjg"/>
+                            <constraint firstItem="y7T-Ex-F27" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N4g-KJ-bmu"/>
+                            <constraint firstItem="y7T-Ex-F27" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NoS-m4-N1X"/>
+                            <constraint firstItem="Glv-pm-yvO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Qmo-c4-mX8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Glv-pm-yvO" secondAttribute="bottom" id="Tgt-Fu-1ms"/>
+                            <constraint firstAttribute="trailing" secondItem="gmO-Dp-mH1" secondAttribute="trailing" id="aF6-gi-oKr"/>
+                            <constraint firstItem="Glv-pm-yvO" firstAttribute="top" secondItem="y7T-Ex-F27" secondAttribute="bottom" id="iAr-ef-gcN"/>
+                            <constraint firstItem="gmO-Dp-mH1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sNh-5A-o0E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Cardoneimageview" destination="p5b-uC-FqO" id="Dg7-FH-thb"/>
+                        <outlet property="CasinoWarBackgroundImageview" destination="gmO-Dp-mH1" id="Xni-Ih-pzC"/>
+                        <outlet property="cartwoimageview" destination="DBS-5V-oLY" id="wgI-p7-Ocs"/>
+                        <outlet property="pRoundButton" destination="ewl-7L-mSB" id="yHl-MZ-IjP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="371" y="325"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Casino_War.jpg" width="3264" height="1836"/>
+        <image name="black_joker" width="166" height="242"/>
+        <image name="red_joker" width="166" height="242"/>
+    </resources>
+</document>
